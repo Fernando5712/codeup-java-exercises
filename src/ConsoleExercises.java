@@ -1,70 +1,72 @@
 import java.util.Scanner;
 public class ConsoleExercises {
 
-    static Scanner sc = new Scanner(System.in).useDelimiter("\n");
 
 
-    public static void addition( int x, int y){
-        System.out.println(x + y);
-    }
-    public static void subtraction( int x, int y){
-        System.out.println(x - y);
-    }
-    public static void multiplication( int x, int y){
-        System.out.println(x * y);
-    }
-    public static void division( int x, int y){
-        System.out.println(x / y);
-    }
-    public static void modulus(int x, int y){
-        System.out.println(x % y);
-    }
-
-    public static int getInteger(int min, int max){
-        Scanner userInput = new Scanner(System.in).useDelimiter("\n");
-        System.out.printf("Enter number between %d and %d: ", min, max);
-        int input = userInput.nextInt();
-        if (input > max || input < min){
-            System.out.println("Please enter a number withing the stated range");
-            return getInteger(min, max);
-        }
-        System.out.println("Thanks that's a valid number");
-        return input;
-    }
-
-
-
-
-
-
-    public static void main(String[] args) {
-
-        addition(1, 5);
-        subtraction(6, 4);
-        multiplication(5,8);
-        division(8,4);
-        modulus(5, 5);
-
-        int getInt = getInteger(1,10);
-            System.out.println(getInt);
-
-            int num;
-            long fact = 1;
-            String res;
-        do{
-            num = getInteger(1,26);
-            System.out.println("Calculate factorial of " + num + "?");
-            System.out.println("Continue?(y/n)");
-            res = sc.next();
-        }while(!res.equalsIgnoreCase("y"));
-           for (int i = 1; i <= num; i++){
-               fact = fact * i;
-               if (i < num){
-                   System.out.print(i + " x ");
-               }else {
-                   System.out.println(i + " = " + fact);
-               }
-           }
+//    static Scanner sc = new Scanner(System.in).useDelimiter("\n");
+//
+//
+//    public static void addition( int x, int y){
+//        System.out.println(x + y);
+//    }
+//    public static void subtraction( int x, int y){
+//        System.out.println(x - y);
+//    }
+//    public static void multiplication( int x, int y){
+//        System.out.println(x * y);
+//    }
+//    public static void division( int x, int y){
+//        System.out.println(x / y);
+//    }
+//    public static void modulus(int x, int y){
+//        System.out.println(x % y);
+//    }
+//
+//    public static int getInteger(int min, int max){
+//        Scanner userInput = new Scanner(System.in).useDelimiter("\n");
+//        System.out.printf("Enter number between %d and %d: ", min, max);
+//        int input = userInput.nextInt();
+//        if (input > max || input < min){
+//            System.out.println("Please enter a number withing the stated range");
+//            return getInteger(min, max);
+//        }
+//        System.out.println("Thanks that's a valid number");
+//        return input;
+//    }
+//
+//
+//
+//
+//
+//
+//    public static void main(String[] args) {
+//
+//        addition(1, 5);
+//        subtraction(6, 4);
+//        multiplication(5,8);
+//        division(8,4);
+//        modulus(5, 5);
+//
+//        int getInt = getInteger(1,10);
+//            System.out.println(getInt);
+//
+//            int num;
+//            long fact = 1;
+//            String res;
+//        do{
+//            num = getInteger(1,26);
+//            System.out.println("Calculate factorial of " + num + "?");
+//            System.out.println("Continue?(y/n)");
+//            res = sc.next();
+//        }while(!res.equalsIgnoreCase("y"));
+//           for (int i = 1; i <= num; i++){
+//               fact = fact * i;
+//               if (i < num){
+//                   System.out.print(i + " x ");
+//               }else {
+//                   System.out.println(i + " = " + fact);
+//               }
+//           }
 
 
 //            double pi = 3.14159;
@@ -145,7 +147,6 @@ public class ConsoleExercises {
 //                            i <= num; i++) {
 //                        System.out.printf("%d------|%d-----------|%d-------|%n", i, i * i, i * i * i);
 //                    }
-                }
             }
 
 
